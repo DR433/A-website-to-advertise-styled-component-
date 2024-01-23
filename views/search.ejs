@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon" />
+		<link rel="stylesheet" href="/stylesheets/search.css" />
+		<title>Search Your User's Information</title>
+	</head>
+	<body>
+		<div class="main-wrapper" style="background-image: url('https://static.pexels.com/photos/6662/creative-smartphone-notebook-typography.jpg')">
+			<div class="overlay"></div>
+			<div class="content-container">
+				<div class="page-header">Search Preffered Users Using Either Hobbies or Not or Using Both</div>
+				<form action="/searchuser" method="POST">
+					<div class="input-dropdown">
+						<select name="otherCategory" id="otherCategory">
+							<option disabled selected>Category</option>
+							<option value="fullname">Name</option>
+							<option value="username">Username</option>
+							<option value="phone">Phone</option>
+							<option value="email">Email</option>
+							<option value="gender">Gender</option>
+						</select>
+						<input type="text" name="otherCategorySearch" class="beautiful-input1" id="custom-input" placeholder="Search Users not using Hobbies" />
+					</div>
+
+					<input type="text" name="hobbiesCategory" class="beautiful-input2" id="custom-input" placeholder="Search Users using Hobbies" />
+					<button type="submit" style="display: none">submit</button>
+				</form>
+				<i class="fa fa-search" id="wiki" aria-hidden="true"></i>
+				<div class="error-container"></div>
+				<div class="output-container"></div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	</body>
+</html>

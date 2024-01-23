@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon" />
+		<link rel="stylesheet" href="/stylesheets/userDataInput.css" />
+		<title>Input User Data Information Here</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="title" style="padding-top: 2vw">Enter User Details</div>
+			<form action="/datainput" enctype="multipart/form-data" method="post">
+				<div class="input__img" style="display: flex; margin-top: 1.5vw">
+					<span class="imgdetails" style="font-weight: 500; font-size: medium; padding-right: 2vw">Upload Image</span>
+					<input type="file" name="file" id="file" />
+					<!-- <input type="submit" value="Upload" style="padding: 6px 12px; font-weight: bold; border-radius: 5px; background-color: blue; color: #fff; border: white" /> -->
+				</div>
+				<div class="user__details">
+					<div class="input__box">
+						<span class="details">Full Name</span>
+						<input type="text" name="fullname" placeholder="E.g: John Smith" required />
+					</div>
+					<div class="input__box">
+						<span class="details">Username</span>
+						<input type="text" name="username" placeholder="johnWC98" required />
+					</div>
+					<div class="input__box">
+						<span class="details">Age</span>
+						<input type="number" name="age" placeholder="E.g: 25" required />
+					</div>
+					<div class="input__box">
+						<span class="details">Phone Number</span>
+						<input type="tel" name="phone" pattern="[0-9]{10}" placeholder="0123456789" required />
+					</div>
+					<div class="input__box">
+						<span class="details">Email</span>
+						<input type="email" name="email" placeholder="E.g: johnDoe342@gmail.com" required />
+					</div>
+					<div class="input__box">
+						<span class="details">Hobbies</span>
+						<input type="text" name="hobbies" placeholder="E.g: Cricket, Gardening etc." required />
+					</div>
+					<div class="input__box">
+						<span class="details">Date of Birth</span>
+						<input type="date" name="dob" placeholder="E.g: 23-04-2001" required />
+					</div>
+				</div>
+				<div class="gender__details">
+					<input type="radio" name="gender" id="dot-1" value="Male" />
+					<input type="radio" name="gender" id="dot-2" value="Female" />
+					<span class="gender__title">Gender</span>
+					<div class="category">
+						<label for="dot-1">
+							<span class="dot one"></span>
+							<span>Male</span>
+						</label>
+						<label for="dot-2">
+							<span class="dot two"></span>
+							<span>Female</span>
+						</label>
+					</div>
+				</div>
+				<div class="button">
+					<input type="submit" value="Register" />
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
